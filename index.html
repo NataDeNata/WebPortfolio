@@ -26,18 +26,18 @@
     <section class="home" id="home">
         <div class="home-content">
             <h3>MAWD-12 STUDENT</h3>
-            <h1>Raniel, Nathan & Phanuel</h1>
+            <h1>Raniel Domigsi</h1>
             <h3>Our portfolio on <span> JavaScript </span></h3>
             <p>Our first portfolio on JavaScript which it contains Object, Functions, Conditionals, Loops, Variables, Operators</p>
         </div>
         <div class="home-img">
-            <img src="images/home.jpg" alt="">
+            <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\home.jpg" alt="">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.jpg" alt="">
+            <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\about.jpg" alt="">
         </div>
 
         <div class="about-content">
@@ -55,7 +55,141 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>JavaScript</h3>
-                <p>"Our service on this language JavaScript is to give clear and concise explanations to help people understand the basics and build a strong foundation. We aim to break down complex concepts into simple terms that are easy to grasp for beginners. Our goal is to provide a smooth starting point for anyone looking to learn JavaScript, whether they have coded before or are completely new to programming. We want to equip people with the key knowledge and skills they need to start applying JavaScript to build interactive websites, web applications, and more."</p>
+                <p>"My service on this language JavaScript is to give clear and concise explanations to help people understand the basics and build a strong foundation. I aim to break down complex concepts into simple terms that are easy to grasp for beginners. My goal is to provide a smooth starting point for anyone looking to learn JavaScript, whether they have coded before or are completely new to programming. I want to equip people with the key knowledge and skills they need to start applying JavaScript to build interactive websites, web applications, and more."</p>
             </div>
         </div>
     </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">JavaScript <span> Portfolio </span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Object</h4>
+                    <button class="show-image-btn">Show Image</button>
+                    <div class="image-popup">
+                        <span class="close" id="closeBtn">&times;</span>
+                        <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio1.jpg" alt="Portfolio 1">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Repeat this structure for other portfolio items -->
+            <!-- Example for the second item -->
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Funtions</h4>
+                    <button class="show-image-btn">Show Image</button>
+                    <div class="image-popup">
+                        <span class="close" id="closeBtn">&times;</span>
+                        <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio2.jpg" alt="Portfolio 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Conditionals</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Loops</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Variables</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Operators</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name">
+                <input type="email" placeholder="Email Address" id="email">
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Phone Number" id="phone">
+                <input type="text" placeholder="Email Subject" id="subject">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" id="submitBtn">
+        </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            if (!name || !email || !phone || !subject || !message) {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            
+            if (!isValidEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!isValidPhoneNumber(phone)) {
+                alert("Please enter a valid phone number.");
+                return false;
+            }
+
+            return true;
+        }
+        function isValidEmail(email) {
+            return /\S+@\S+\.\S+/.test(email);
+        }
+        function isValidPhoneNumber(phone) {
+        return /^[0-9()\-\s]+$/.test(phone);
+        }
+        var submitButton = document.getElementById("submitBtn");
+        submitButton.addEventListener("click", function (event) {
+            event.preventDefault(); 
+            if (validateForm()) {
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
