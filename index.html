@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header clas="'header">
         <a href="#" class="logo">Portfolio</a>
 
@@ -23,17 +24,50 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <div id="fixed-clock">
+        <div id="time"></div>
+        <div id="date"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    </script>
+    
     <section class="home" id="home">
         <div class="home-content">
-            <h3>MAWD-12 STUDENT</h3>
-            <h1>Raniel Domigsi</h1>
-            <h3>Our portfolio on <span> JavaScript </span></h3>
-            <p>Our first portfolio on JavaScript which it contains Object, Functions, Conditionals, Loops, Variables, Operators</p>
+            <h1>MAWD-12</h1>    
+            <br>
+            <br>
+            <h3>Our first <span> Web Portfolio </span></h3>         
         </div>
+
         <div class="home-img">
-            <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\home.jpg" alt="">
+            <div class="image-container1">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\home.jpg" alt="">
+                <div class="overlay">
+                    <p class="image-text">Hello</p>
+                </div>
+            </div>
+        </div>
+        <div class="home-img2">
+            <div class="image-container2">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\home2.jpg" alt=""> 
+                <div class="overlay">
+                    <p class="image-text">Hello</p>
+                </div>    
+            </div>
+        </div>
+        <div class="home-img3">
+            <div class="image-container3">
+                <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\home3.jpg" alt="">      
+                <div class="overlay">
+                    <p class="image-text">Hello</p>
+                </div>
+            </div>           
         </div>
     </section>
+
+    
 
     <section class="about" id="about">
         <div class="about-img">
@@ -49,13 +83,13 @@
     </section>
 
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">Our <span>Skills</span></h2>
 
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>JavaScript</h3>
-                <p>"My service on this language JavaScript is to give clear and concise explanations to help people understand the basics and build a strong foundation. I aim to break down complex concepts into simple terms that are easy to grasp for beginners. My goal is to provide a smooth starting point for anyone looking to learn JavaScript, whether they have coded before or are completely new to programming. I want to equip people with the key knowledge and skills they need to start applying JavaScript to build interactive websites, web applications, and more."</p>
+                <p>"Our training in javascript is still undergoing. We aim to learn and "</p>
             </div>
         </div>
     </section>
@@ -68,35 +102,27 @@
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Object</h4>
-                    <button class="show-image-btn">Show Image</button>
-                    <div class="image-popup">
-                        <span class="close" id="closeBtn">&times;</span>
-                        <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio1.jpg" alt="Portfolio 1">
-                    </div>
+                    <p>Objects are data structures that allow you to store and organize related data and functions.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            
-            <!-- Repeat this structure for other portfolio items -->
-            <!-- Example for the second item -->
+
             <div class="portfolio-box">
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio2.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Funtions</h4>
-                    <button class="show-image-btn">Show Image</button>
-                    <div class="image-popup">
-                        <span class="close" id="closeBtn">&times;</span>
-                        <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio2.jpg" alt="Portfolio 2">
-                    </div>
+                    <p>unctions are blocks of reusable code that perform specific tasks when called.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        </div>
-        
 
 
             <div class="portfolio-box">
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio3.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Conditionals</h4>
+                    <p>Conditionals, such as "if" statements, allow you to make decisions in your code based on specified conditions</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -105,6 +131,8 @@
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio4.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Loops</h4>
+                    <p>Loops, like "for" and "while" loops, are used to repeat a set of instructions multiple times.
+                    </p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -113,6 +141,7 @@
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio5.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Variables</h4>
+                    <p>Variables are used to store data values that can be accessed and modified in your code</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -121,6 +150,7 @@
                 <img src="c:\Users\natad\OneDrive\Desktop\School\Tasks\WebPortfolioGroup\portfolio6.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Operators</h4>
+                    <p>Operators are symbols or keywords used to perform operations on values.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -189,7 +219,7 @@
             }
         });
     </script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
